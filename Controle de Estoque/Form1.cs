@@ -19,7 +19,6 @@ namespace Controle_de_Estoque
             BD.ConnectToMongoService();
 
             InitializeComponent();
-            // size: 360; 444
 
 
         }
@@ -50,8 +49,6 @@ namespace Controle_de_Estoque
 
         private void buttonRegisterPanel_Click(object sender, EventArgs e)
         {
-            Console.WriteLine("34");
-
             if (registerLogin.Text != "" && registerPasswd.Text != "" && (registerPasswd.Text == registerPasswd1.Text))
             {
                 bool register = BD.registerBD(registerLogin.Text,registerPasswd.Text);
@@ -83,8 +80,10 @@ namespace Controle_de_Estoque
 
                 if (login)
                 {
-                    loginMessage.ForeColor = System.Drawing.Color.Lime;
-                    loginMessage.Text = "LOGADO, ALTERAR PROXIMA INTERFACE!";
+                    this.Hide();
+                    Form2 f2 = new Form2();
+                    f2.ShowDialog();
+                    this.Close();
                 }
                 else
                 {

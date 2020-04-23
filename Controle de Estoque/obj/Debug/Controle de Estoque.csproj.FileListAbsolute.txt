@@ -26,3 +26,4 @@ C:\Users\thiag\source\repos\Controle de Estoque\bin\Debug\Snappy.NET.xml
 C:\Users\thiag\source\repos\Controle de Estoque\bin\Debug\System.Buffers.xml
 C:\Users\thiag\source\repos\Controle de Estoque\obj\Debug\Controle de Estoque.csproj.CopyComplete
 C:\Users\thiag\source\repos\Controle de Estoque\obj\Debug\Controle de Estoque.csprojAssemblyReference.cache
+C:\Users\thiag\source\repos\Controle de Estoque\obj\Debug\Controle_de_Estoque.Form2.resources

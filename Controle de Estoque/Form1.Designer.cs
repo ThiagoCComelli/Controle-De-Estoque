@@ -68,6 +68,7 @@ namespace Controle_de_Estoque
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
             this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.panelLoginGeral = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCadastro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -81,14 +82,15 @@ namespace Controle_de_Estoque
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            this.panelLoginGeral.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -1);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(352, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(360, 93);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -98,7 +100,7 @@ namespace Controle_de_Estoque
             this.nameApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.nameApp.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameApp.ForeColor = System.Drawing.Color.White;
-            this.nameApp.Location = new System.Drawing.Point(2, 32);
+            this.nameApp.Location = new System.Drawing.Point(12, 23);
             this.nameApp.Name = "nameApp";
             this.nameApp.Size = new System.Drawing.Size(339, 39);
             this.nameApp.TabIndex = 3;
@@ -109,7 +111,7 @@ namespace Controle_de_Estoque
             this.myName.AutoSize = true;
             this.myName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.myName.ForeColor = System.Drawing.Color.White;
-            this.myName.Location = new System.Drawing.Point(237, 72);
+            this.myName.Location = new System.Drawing.Point(247, 63);
             this.myName.Name = "myName";
             this.myName.Size = new System.Drawing.Size(93, 13);
             this.myName.TabIndex = 2;
@@ -133,7 +135,7 @@ namespace Controle_de_Estoque
             this.panelCadastro.Controls.Add(this.pictureBox10);
             this.panelCadastro.Controls.Add(this.pictureBox8);
             this.panelCadastro.Controls.Add(this.pictureBox9);
-            this.panelCadastro.Location = new System.Drawing.Point(2, 98);
+            this.panelCadastro.Location = new System.Drawing.Point(12, 99);
             this.panelCadastro.Name = "panelCadastro";
             this.panelCadastro.Size = new System.Drawing.Size(339, 333);
             this.panelCadastro.TabIndex = 1;
@@ -338,7 +340,7 @@ namespace Controle_de_Estoque
             this.panelLogin.Controls.Add(this.label13);
             this.panelLogin.Controls.Add(this.pictureBox16);
             this.panelLogin.Controls.Add(this.pictureBox17);
-            this.panelLogin.Location = new System.Drawing.Point(2, 98);
+            this.panelLogin.Location = new System.Drawing.Point(12, 99);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(339, 333);
             this.panelLogin.TabIndex = 0;
@@ -486,17 +488,25 @@ namespace Controle_de_Estoque
             this.pictureBox17.TabIndex = 8;
             this.pictureBox17.TabStop = false;
             // 
+            // panelLoginGeral
+            // 
+            this.panelLoginGeral.Controls.Add(this.panelLogin);
+            this.panelLoginGeral.Controls.Add(this.myName);
+            this.panelLoginGeral.Controls.Add(this.panelCadastro);
+            this.panelLoginGeral.Controls.Add(this.nameApp);
+            this.panelLoginGeral.Controls.Add(this.pictureBox1);
+            this.panelLoginGeral.Location = new System.Drawing.Point(0, 0);
+            this.panelLoginGeral.Name = "panelLoginGeral";
+            this.panelLoginGeral.Size = new System.Drawing.Size(360, 450);
+            this.panelLoginGeral.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(38)))), ((int)(((byte)(38)))));
-            this.ClientSize = new System.Drawing.Size(344, 444);
-            this.Controls.Add(this.panelLogin);
-            this.Controls.Add(this.panelCadastro);
-            this.Controls.Add(this.myName);
-            this.Controls.Add(this.nameApp);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(361, 444);
+            this.Controls.Add(this.panelLoginGeral);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -518,18 +528,13 @@ namespace Controle_de_Estoque
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            this.panelLoginGeral.ResumeLayout(false);
+            this.panelLoginGeral.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
-        public class Global
-        {
-            public static IMongoClient client;
-            public static IMongoDatabase database;
-            public static IMongoCollection<Entity> collectionDados;
-            public static IMongoCollection<User> collectionLogin;
-        }
+        
 
         public class BD
         {
@@ -551,7 +556,7 @@ namespace Controle_de_Estoque
             {
                 try
                 {
-                    Global.collectionLogin.InsertOne(new User { _id = login, password = passwd});
+                    Global.collectionLogin.InsertOne(new User { _id = login, password = passwd, mode = "Normal"});
                     return true;
                 }
                 catch
@@ -568,6 +573,8 @@ namespace Controle_de_Estoque
 
                     if(results.Count == 1)
                     {
+                        Global.user = login;
+                        Global.mode = results[0].mode;
                         return true;
                     } else
                     {
@@ -583,17 +590,7 @@ namespace Controle_de_Estoque
 
         }
 
-        public class Entity
-        {
-            public string _id { get; set; }
-            public int quant { get; set; }
-        }
-
-        public class User
-        {
-            public string _id { get; set; }
-            public string password { get; set; }
-        }
+        
 
         #endregion
         private System.Windows.Forms.TextBox loginLogin;
@@ -627,8 +624,33 @@ namespace Controle_de_Estoque
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Label panelLabel;
         private System.Windows.Forms.Button buttonBackLogin;
-        private Label registerMessage;
-        private Label loginMessage;
+        private System.Windows.Forms.Label registerMessage;
+        private System.Windows.Forms.Label loginMessage;
+        private System.Windows.Forms.Panel panelLoginGeral;
+    }
+
+    public class Global
+    {
+        public static IMongoClient client;
+        public static IMongoDatabase database;
+        public static IMongoCollection<Entity> collectionDados;
+        public static IMongoCollection<User> collectionLogin;
+        public static string user = null;
+        public static string mode = null;
+    }
+
+    public class Entity
+    {
+        public string _id { get; set; }
+        public int quant { get; set; }
+        public int preco { get; set; }
+    }
+
+    public class User
+    {
+        public string _id { get; set; }
+        public string password { get; set; }
+        public string mode { get; set; }
     }
 }
 
